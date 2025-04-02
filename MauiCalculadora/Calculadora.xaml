@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiCalculadora.Calculadora"
+             Title="Calculadora">
+    <VerticalStackLayout>
+
+        <Label Text="0"
+               FontSize="40"
+               HorizontalTextAlignment="End" 
+               BackgroundColor="Gray"
+               TextColor="White"
+               HeightRequest="60"
+               VerticalTextAlignment="Center"
+               Padding="0,0,10,0"
+               x:Name="lblPainel"
+               />
+
+        <Grid BackgroundColor="Beige" Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <Label Text="| | | | | | | | | |"
+                   Grid.ColumnSpan="2"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   BackgroundColor="Black" TextColor="White"
+                   Margin="0,10,0,0"
+                   HeightRequest="30"
+                   VerticalTextAlignment="Center"
+                   FontSize="20"
+                   />
+
+            <Button Text="ON/AC" Grid.Column="4" Grid.Row="0"
+                    BackgroundColor="Aquamarine"
+                    TextColor="Black"
+                    />
+
+            <Button Text="M+"
+                    Grid.Row="1" Grid.Column="0"
+                    Margin="10"
+                    BackgroundColor="Gray"
+                    TextColor="Black" />
+            <Button Text="M-"
+                    Margin="10"
+                    Grid.Row="1" Grid.Column="1"
+                     BackgroundColor="Gray"
+                     TextColor="Black" />
+            <Button Text="MRC"
+                    Margin="10"
+                     Grid.Row="1" Grid.Column="2"
+                     BackgroundColor="Gray"
+                     TextColor="Black" />
+            <Button Text="GT"
+                    Margin="10"
+                      Grid.Row="1" Grid.Column="3"
+                      BackgroundColor="Gray"
+                      TextColor="Black" />
+            <Button Text="CE"
+                    Margin="10"
+                      Grid.Row="1" Grid.Column="4"
+                      BackgroundColor="Gray"
+                      TextColor="Black" />
+
+
+            <Button Text="7"
+                    Margin="10"
+                        Grid.Row="2" Grid.Column="0"
+                        BackgroundColor="Gray"
+                        TextColor="Black" />
+            <Button Text="8"
+                    Margin="10"
+                         Grid.Row="2" Grid.Column="1"
+                         BackgroundColor="Gray"
+                         TextColor="Black" />
+            <Button Text="9"
+                    Margin="10"
+                         Grid.Row="2" Grid.Column="2"
+                         BackgroundColor="Gray"
+                         TextColor="Black" />
+            <Button Text="/"
+                    Margin="10"
+                          Grid.Row="2" Grid.Column="3"
+                          BackgroundColor="Gray"
+                          TextColor="Black" />
+            <Button Text=">"
+                    Margin="10"
+                          Grid.Row="2" Grid.Column="4"
+                          BackgroundColor="Gray"
+                          TextColor="Black" />
+
+            <Button Text="4"
+          Margin="10"
+                      Grid.Row="3" Grid.Column="0"
+            BackgroundColor="Gray"
+            TextColor="Black" />
+            <Button  Text="5"
+                     x:Name="btn05"
+                     Margin="10"
+                     Grid.Row="3" Grid.Column="1"
+                     BackgroundColor="Gray"
+                     TextColor="Black"
+                     Clicked="btn05_Clicked"
+                     />
+            <Button Text="6"
+             Margin="10"
+                    Grid.Row="3" Grid.Column="2"
+             BackgroundColor="Gray"
+             TextColor="Black" />
+            <Button Text="X"
+           Margin="10"
+                       Grid.Row="3" Grid.Column="3"
+              BackgroundColor="Gray"
+              TextColor="Black" />
+            <Button Text="%"
+             Margin="10"
+                     Grid.Row="3" Grid.Column="4"
+              BackgroundColor="Gray"
+              TextColor="Black" />
+
+            <Button Text="1"
+                    Margin="10"
+                     Grid.Row="4" Grid.Column="0"
+                     BackgroundColor="Gray"
+                     TextColor="Black" />
+            <Button Text="2"
+                    Margin="10"
+                      Grid.Row="4" Grid.Column="1"
+                      BackgroundColor="Gray"
+                      TextColor="Black" />
+            <Button Text="3"
+                  Margin="10"
+                        Grid.Row="4" Grid.Column="2"
+                      BackgroundColor="Gray"
+                      TextColor="Black" />
+            <Button Text="+"
+                    Margin="10"
+                       Grid.Row="4" Grid.Column="3"
+                       Grid.RowSpan="2"
+                       BackgroundColor="Gray"
+                       TextColor="Black" />
+            <Button Text="="
+                    Margin="10"
+                       Grid.Row="4" Grid.Column="4"
+                       Grid.RowSpan="2"
+                       BackgroundColor="Gray"
+                       TextColor="Black" />
+
+            <Button Text="0"
+                    Margin="10"
+                     Grid.Row="5" Grid.Column="0"
+                     BackgroundColor="Gray"
+                     TextColor="Black" />
+            <Button Text="00"
+                    Margin="10"
+                      Grid.Row="5" Grid.Column="1"
+                      BackgroundColor="Gray"
+                      TextColor="Black" />
+            <Button Text="."
+                    Margin="10"
+                      Grid.Row="5" Grid.Column="2"
+                      BackgroundColor="Gray"
+                      TextColor="Black" />
+          
+
+
+
+        </Grid>
+
+
+
+
+
+
+
+
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
