@@ -5,6 +5,14 @@
              Title="Calculadora">
     <VerticalStackLayout>
 
+        <Border Stroke="Black" StrokeThickness="10"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+                Padding="10"
+                WidthRequest="400"
+                Margin="5"
+                BackgroundColor="Gray"
+                >
         <Label Text="0"
                FontSize="40"
                HorizontalTextAlignment="End" 
@@ -15,7 +23,7 @@
                Padding="0,0,10,0"
                x:Name="lblPainel"
                />
-
+        </Border>
         <Grid BackgroundColor="Beige" Padding="20">
             <Grid.RowDefinitions>
                 <RowDefinition />
@@ -44,10 +52,12 @@
                    FontSize="20"
                    />
 
-            <Button Text="ON/AC" Grid.Column="4" Grid.Row="0"
-                    BackgroundColor="Aquamarine"
-                    TextColor="Black"
-                    />
+            <Frame Grid.Column="4" Grid.Row="0" BackgroundColor="Black" CornerRadius="8" Padding="8" WidthRequest="100">
+                <Button Text="ON/AC" Grid.Column="4" Grid.Row="0"
+                        BackgroundColor="Aquamarine"
+                        TextColor="Black"
+                        />
+            </Frame>
 
             <Button Text="M+"
                     Grid.Row="1" Grid.Column="0"
